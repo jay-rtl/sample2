@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Island Asylum | Books</title>
+<meta name="description" content="Books from Island Asylum — distinctive writing shaped by history, politics, culture, travel, and island life.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#087c85">
+<meta property="og:title" content="Island Asylum | Books — Concept Preview">
+<meta property="og:description" content="An independent concept preview of an editorial books page.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jay-rtl.github.io/sample2/">
+<link rel="canonical" href="https://jay-rtl.github.io/sample2/">
+<style>
+:root{
+  --ink:#172129;
+  --muted:#66737d;
+  --paper:#fbfaf7;
+  --white:#ffffff;
+  --teal:#087c85;
+  --teal-dark:#075b64;
+  --sand:#e9d7b7;
+  --line:#e6e3dc;
+  --shadow:0 18px 44px rgba(20,32,40,.12);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html{scroll-padding-top:100px}
+:focus-visible{outline:3px solid #b05b00;outline-offset:5px}
+.skip-link{position:fixed;top:8px;left:8px;z-index:100;padding:12px 18px;background:#fff;color:#172129;transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+.preview-notice{margin:0;padding:10px 4vw;background:#e9d7b7;color:#172129;text-align:center;font-size:.88rem}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92vw);margin:auto}
+.topbar{
+  background:#0e2229;
+  color:#dfe9eb;
+  font-size:.86rem;
+  padding:8px 0;
+}
+.topbar .container{display:flex;justify-content:space-between;gap:20px}
+.nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(251,250,247,.93);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:170px;height:auto}
+.menu{display:flex;align-items:center;gap:26px;font-weight:650}
+.menu a{text-decoration:none;color:#34434b}
+.menu a:hover{color:var(--teal)}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:0 20px;border-radius:999px;
+  background:var(--teal);color:#fff;text-decoration:none;
+  font-weight:750;border:1px solid var(--teal);
+  transition:.2s ease;
+}
+.cta:hover{background:var(--teal-dark);transform:translateY(-1px)}
+.cta.secondary{background:transparent;color:var(--ink);border-color:#b9c1c4}
+.cta.secondary:hover{border-color:var(--teal);color:var(--teal);background:#fff}
+
+.hero{
+  position:relative;overflow:hidden;
+  min-height:570px;
+  display:flex;align-items:center;
+  background:
+    linear-gradient(90deg,rgba(6,27,33,.94) 0%,rgba(6,27,33,.82) 44%,rgba(6,27,33,.35) 72%,rgba(6,27,33,.12) 100%),
+    url('https://islandasylum.com/images/island.jpg') center 52%/cover no-repeat;
+  color:#fff;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0;height:130px;
+  background:linear-gradient(transparent,var(--paper));
+}
+.hero-copy{position:relative;z-index:2;width:min(720px,90%);padding:90px 0 120px}
+.eyebrow{
+  display:inline-block;
+  font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:#bfeff1;margin-bottom:18px;
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.12;margin:0}
+h1{font-size:clamp(3rem,7vw,5.6rem);font-weight:600;letter-spacing:-.035em}
+.hero p{font-size:1.15rem;color:#e6eff0;max-width:650px;margin:24px 0 34px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .cta.secondary{color:#fff;border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.08)}
+.hero .cta.secondary:hover{background:#fff;color:#15272e}
+
+.section{padding:90px 0}
+.section-head{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;
+  margin-bottom:46px;
+}
+.kicker{color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem}
+.section h2{font-size:clamp(2.2rem,4vw,3.6rem);margin-top:10px}
+.section-head p{margin:0;color:var(--muted);font-size:1.05rem}
+
+.books{display:grid;gap:42px}
+.book{
+  display:grid;grid-template-columns:360px 1fr;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:0 10px 30px rgba(20,32,40,.07);overflow:hidden;
+}
+.cover-wrap{
+  background:linear-gradient(145deg,#f0ede6,#d9e5e4);
+  display:flex;align-items:center;justify-content:center;padding:42px;
+  min-height:510px;
+}
+.cover-wrap img{
+  width:100%;max-width:285px;max-height:430px;object-fit:cover;
+  box-shadow:var(--shadow);border-radius:3px;
+}
+.book-content{padding:48px 50px;display:flex;flex-direction:column;justify-content:center}
+.meta{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.pill{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border-radius:999px;background:#edf6f5;color:#14676e}
+.book h3{font-size:clamp(2rem,4vw,3.1rem);margin-bottom:12px}
+.tagline{font-size:1.05rem;font-style:italic;color:#58666e;margin:0 0 22px}
+.book-copy{color:#4f5c64;margin:0 0 28px;max-width:720px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.quote-card{
+  border-left:4px solid var(--teal);
+  background:#f2f7f6;
+  padding:20px 22px;border-radius:0 14px 14px 0;
+  color:#425159;margin:0 0 26px;font-family:Georgia,serif;font-size:1.02rem
+}
+.coming{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;
+  border-radius:var(--radius);padding:50px;
+  background:#10262d;color:#fff;overflow:hidden;position:relative;
+}
+.coming:before{
+  content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+  right:-100px;top:-120px;background:rgba(29,169,174,.15)
+}
+.coming p{color:#d3e1e3;max-width:650px}
+.coming h3{font-size:2.5rem;margin:8px 0 18px}
+.coming-badge{
+  justify-self:end;width:210px;aspect-ratio:3/4;
+  border-radius:12px;background:linear-gradient(160deg,#f5ead6,#9fc7c4);
+  box-shadow:0 20px 55px rgba(0,0,0,.28);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:24px;color:#173138;font-family:Georgia,serif;font-size:1.8rem;
+  transform:rotate(3deg)
+}
+
+.story{
+  background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)
+}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story img{height:520px;width:100%;object-fit:cover;border-radius:var(--radius)}
+.story p{color:var(--muted)}
+.checks{display:grid;gap:12px;margin:28px 0}
+.check{display:flex;gap:12px;align-items:flex-start}
+.check span{width:25px;height:25px;flex:0 0 25px;border-radius:50%;background:#e2f3f1;color:var(--teal);font-weight:900;display:flex;align-items:center;justify-content:center}
+
+.contact{
+  text-align:center;padding:90px 0;
+  background:linear-gradient(180deg,var(--paper),#eef4f2);
+}
+.contact .box{
+  width:min(820px,92vw);margin:auto;background:#fff;border:1px solid var(--line);
+  border-radius:28px;padding:55px;box-shadow:0 16px 50px rgba(20,32,40,.08)
+}
+.contact h2{font-size:clamp(2.2rem,4vw,3.5rem)}
+.contact p{color:var(--muted);max-width:620px;margin:18px auto 28px}
+
+footer{background:#0e2229;color:#b9c7ca;padding:34px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center}
+footer a{color:#e1edef;text-decoration:none}
+.small{font-size:.86rem}
+
+@media(max-width:880px){
+  .menu a:not(.cta){display:none}
+  .section-head,.story-grid,.coming{grid-template-columns:1fr}
+  .book{grid-template-columns:1fr}
+  .cover-wrap{min-height:auto}
+  .coming-badge{justify-self:start}
+}
+@media(max-width:580px){
+  .topbar{display:none}
+  .nav-inner{height:70px}
+  .nav-inner{gap:12px}
+  .brand img{width:145px}
+  .menu .cta{padding:0 14px;min-height:42px}
+  .hero{min-height:520px}
+  .hero-copy{padding:70px 0 110px}
+  .section{padding:66px 0}
+  .book-content{padding:32px 26px}
+  .cover-wrap{padding:30px}
+  .contact .box{padding:38px 24px}
+  .story img{height:360px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<p class="preview-notice">Concept preview — not the official Island Asylum website. Links open external websites; book availability and content require confirmation.</p>
+
+<div class="topbar">
+  <div class="container">
+    <span>Independent books, art, travel, and island perspective.</span>
+    <span>Island Asylum · Established 2013</span>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="https://islandasylum.com/" target="_blank" rel="noopener">
+      <img src="https://islandasylum.com/images/logo.png" alt="Island Asylum">
+    </a>
+    <div class="menu">
+      <a href="https://islandasylum.com/" target="_blank" rel="noopener">Home</a>
+      <a href="https://islandasylum.com/art.asp" target="_blank" rel="noopener">Fine Art</a>
+      <a href="#books">Books</a>
+      <a class="cta" href="https://islandasylum.com/contact.asp" target="_blank" rel="noopener">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">Island Asylum Books</span>
+      <h1>Stories from the edge of the map.</h1>
+      <p>Distinctive writing shaped by politics, history, culture, travel, contradiction, and a life lived between Los Angeles and the islands of Micronesia.</p>
+      <div class="hero-actions">
+        <a class="cta" href="#books">Explore the books</a>
+        <a class="cta secondary" href="https://islandasylum.com/contact.asp" target="_blank" rel="noopener">Rights & inquiries</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="section" id="books">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Selected works</span>
+        <h2>Books with a point of view.</h2>
+      </div>
+      <p>Each title is given a clear editorial presentation, concise positioning, and direct next step—so visitors can understand the work quickly and act without searching the page.</p>
+    </div>
+
+    <div class="books">
+      <article class="book">
+        <div class="cover-wrap">
+          <img src="https://islandasylum.com/images/books/minorities_2022f.png" alt="Minorities, Inc. book cover">
+        </div>
+        <div class="book-content">
+          <div class="meta">
+            <span class="pill">Satirical Fiction</span>
+            <span class="pill">Politics & Culture</span>
+          </div>
+          <h3>Minorities, Inc.</h3>
+          <p class="tagline">A story of civic chicanery involving just about everybody.</p>
+          <p class="book-copy">A provocative, darkly comic journey that sends Paddy Puzo from Los Angeles into increasingly unpredictable encounters with American politics, identity, and institutional absurdity—eventually carrying him far beyond the mainland.</p>
+          <div class="actions">
+            <a class="cta" href="https://www.barnesandnoble.com/" target="_blank" rel="noopener">Browse Barnes & Noble</a>
+            <a class="cta secondary" href="https://islandasylum.com/books.asp" target="_blank" rel="noopener">Read preview</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="book">
+        <div class="cover-wrap">
+          <img src="https://islandasylum.com/images/books/bpwc_cover.png" alt="Black Power and white cower, Inc. book cover">
+        </div>
+        <div class="book-content">
+          <div class="meta">
+            <span class="pill">Memoir</span>
+            <span class="pill">Social Commentary</span>
+          </div>
+          <h3>BLACK POWER &amp; white cower, Inc.</h3>
+          <div class="quote-card">“There is another class of coloured people who make a business of keeping the troubles… before the public.” — Booker T. Washington</div>
+          <p class="book-copy">An autobiographical account of growing up around Los Angeles during decades of social upheaval, followed by a move to Micronesia. The book presents an intentionally confrontational personal perspective on race, government policy, and cultural change.</p>
+          <div class="actions">
+            <a class="cta" href="https://www.barnesandnoble.com/" target="_blank" rel="noopener">Browse Barnes & Noble</a>
+            <a class="cta secondary" href="https://islandasylum.com/contact.asp" target="_blank" rel="noopener">Ask about the title</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="coming">
+        <div>
+          <span class="kicker" style="color:#7fd3d4">Coming soon</span>
+          <h3>Virgins and Villains</h3>
+          <p>A forthcoming poetry selection. This treatment gives future or unpublished work a deliberate “coming soon” presence rather than leaving it as a loose line of text at the bottom of the page.</p>
+          <a class="cta" href="https://islandasylum.com/contact.asp" target="_blank" rel="noopener">Request updates</a>
+        </div>
+        <div class="coming-badge">Virgins<br>&amp;<br>Villains</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section story">
+  <div class="container story-grid">
+    <img src="https://islandasylum.com/images/island.jpg" alt="Island landscape">
+    <div>
+      <span class="kicker">The Island Asylum perspective</span>
+      <h2>Give the brand a stronger editorial identity.</h2>
+      <p>Island Asylum already has a memorable name, distinctive subject matter, original artwork, and a clear island-life backstory. The redesigned presentation turns those ingredients into a more cohesive literary brand.</p>
+      <div class="checks">
+        <div class="check"><span>✓</span><div><strong>More visual authority.</strong><br>Large covers, disciplined typography, and consistent spacing create a professional first impression.</div></div>
+        <div class="check"><span>✓</span><div><strong>Better conversion path.</strong><br>Every title has an obvious buy, preview, or inquiry action.</div></div>
+        <div class="check"><span>✓</span><div><strong>Mobile-first reading.</strong><br>Long content is broken into readable sections that adapt cleanly to smaller screens.</div></div>
+        <div class="check"><span>✓</span><div><strong>Expandable structure.</strong><br>Future books, reviews, media, rights information, and author features can be added without redesigning the page.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="box">
+    <span class="kicker">Books · Rights · Media</span>
+    <h2>Interested in a title?</h2>
+    <p>For book information, availability, media requests, permissions, or other inquiries, contact Island Asylum directly.</p>
+    <a class="cta" href="https://islandasylum.com/contact.asp" target="_blank" rel="noopener">Contact Island Asylum</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong style="color:white">Island Asylum</strong>
+      <div class="small">Books, fine art, and an island perspective.</div>
+    </div>
+    <div class="small">Concept redesign · responsive editorial layout</div>
+  </div>
+</footer>
+
+</body>
+</html>
